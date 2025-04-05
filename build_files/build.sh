@@ -10,6 +10,6 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 dnf5 copr enable -y ilyaz/LACT
-dnf5 update
+#dnf5 update -y
 dnf5 install -y mc firefox lact
 systemctl enable lactd
