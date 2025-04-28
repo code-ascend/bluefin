@@ -3,7 +3,8 @@
 set -ouex pipefail
 
 dnf5 copr enable -y ilyaz/LACT
-dnf5 install -y mc firefox lact
+dnf5 copr enable shdwchn10/zenpower3
+dnf5 install -y mc firefox lact zenpower3 zenmonitor3
 systemctl enable lactd
 
 touch /usr/lib/bootc/kargs.d/10-amd-gpu.toml
