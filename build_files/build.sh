@@ -3,7 +3,7 @@
 set -ouex pipefail
 
 dnf5 copr enable -y ilyaz/LACT
-dnf5 install -y mc firefox lact
+dnf5 install -y mc firefox lact NetworkManager-libreswan-gnome
 systemctl enable lactd
 
 touch /usr/lib/bootc/kargs.d/10-amd-gpu.toml
